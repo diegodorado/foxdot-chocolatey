@@ -23,6 +23,6 @@ FoxDot.start
 4. Start FoxDot editor
 
 ```python
--- type and put your cursor on this code, then Ctrl+Enter
+## type and put your cursor on this code, then Ctrl+Enter
 p1 >> play("x-o-")
 ```
