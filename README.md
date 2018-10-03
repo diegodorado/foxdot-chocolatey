@@ -1,28 +1,28 @@
-# Chocolatey Package for foxdot
+# Chocolatey Package for FoxDot
 This repo hosts code for Chocolatey package related to the FoxDot live-coding environment.
+
+**WARNING:** This package overwrites your `startup.scd` file. If you are already using SuperCollider, make a backup of your `startup.scd` file before installing foxdot.
 
 ## FoxDot Installation
 
 Make sure you have Chocolatey installed. See https://chocolatey.org for more information.
 
-1. Run Windows PowerShell with admin privledges, and then execute this command:
+1. Run Windows PowerShell with admin privileges, and then execute this command:
 
 ```bash
 choco install foxdot
 ```
 
-2. Start SuperCollider
+## Run FoxDot
 
-3. Start FoxDot:
+1. Start SuperCollider  
+  *FoxDot.start is already on your startup.scd file*
 
-```
-// type and put your cursor on this code, then Shift+Enter
-FoxDot.start
-```
+2. Open FoxDot
+  *There is a FoxDot shortcut on Desktop * =)
 
-4. Start FoxDot editor
-
-```python
-## type and put your cursor on this code, then Ctrl+Enter
-p1 >> play("x-o-")
-```
+3. Start livecoding!
+  ```python
+  ## type and put your cursor on this code, then Ctrl+Enter
+  p1 >> play("x-o-")
+  ```
