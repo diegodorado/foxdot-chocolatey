@@ -27,14 +27,11 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
     <version>0.0.1</version>
-    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
-    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
-    <!--<owners>__REPLACE_YOUR_NAME__</owners>-->
-    <!-- ============================== -->
-
+    <packageSourceUrl>https://github.com/diegodorado/foxdot-chocolatey</packageSourceUrl>
+    <owners>diegodorado</owners>
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>foxdot (Install)</title>
+    <title>FoxDot for Windows</title>
     <authors>diegodorado@gmail.com</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://foxdot.org/</projectUrl>
@@ -47,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>foxdot SPACE_SEPARATED</tags>
+    <tags>foxdot supercollider livecoding</tags>
     <summary>FoxDot: Live Coding with Python and SuperCollider</summary>
     <description>FoxDot is an easy-to-use Python library that creates an interactive programming environment and talks to the powerful sound synthesis engine, called SuperCollider to  make music.</description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
