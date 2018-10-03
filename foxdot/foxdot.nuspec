@@ -1,33 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
-<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://chocolatey.org/packages). -->
-
-<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
-
-<!--
-This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Reference. Chocolatey uses a special version of NuGet.Core that allows us to do more than was initially possible. As such there are certain things to be aware of:
-
-* the package xmlns schema url may cause issues with nuget.exe
-* Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces
-* nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements
--->
-
-<!-- You can embed software files directly into packages, as long as you are not bound by distribution rights. -->
-<!-- * If you are an organization making private packages, you probably have no issues here -->
-<!-- * If you are releasing to the community feed, you need to consider distribution rights. -->
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>foxdot</id>
-    <version>0.7.0-beta</version>
+    <version>0.0.1</version>
     <packageSourceUrl>https://github.com/diegodorado/foxdot-chocolatey</packageSourceUrl>
     <owners>diegodorado</owners>
     <title>FoxDot for Windows</title>
-    <authors>diegodorado@gmail.com</authors>
+    <authors>https://github.com/diegodorado</authors>
     <projectUrl>http://foxdot.org/</projectUrl>
     <iconUrl>http://cdn.rawgit.com/diegodorado/foxdot-chocolatey/master/foxdot-icon.png</iconUrl>
-    <!-- <copyright>Year Software Vendor</copyright> -->
-    <!-- If there is a license Url available, it is required for the community feed -->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/Qirky/FoxDot</projectSourceUrl>
     <docsUrl>https://docs.foxdot.org/</docsUrl>
@@ -36,19 +17,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <tags>foxdot supercollider livecoding</tags>
     <summary>FoxDot: Live Coding with Python and SuperCollider</summary>
     <description>FoxDot is an easy-to-use Python library that creates an interactive programming environment and talks to the powerful sound synthesis engine, called SuperCollider to  make music.</description>
-    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
-    <!-- =============================== -->
-
     <dependencies>
       <dependency id="git"  version="2.19.0" />
       <dependency id="python"  version="3.7.0" />
       <dependency id="supercollider" version="3.9.3" />
       <dependency id="sc3plugins" version="3.9.0"/>
     </dependencies>
-
-    <!--<provides>NOT YET IMPLEMENTED</provides>-->
-    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
-    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
