@@ -12,7 +12,6 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/Qirky/FoxDot</projectSourceUrl>
     <docsUrl>https://docs.foxdot.org/</docsUrl>
-    <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://github.com/Qirky/FoxDot/issues</bugTrackerUrl>
     <tags>foxdot supercollider livecoding</tags>
     <summary>FoxDot: Live Coding with Python and SuperCollider</summary>
