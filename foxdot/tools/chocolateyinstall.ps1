@@ -5,7 +5,7 @@
 # 1. See the _TODO.md that is generated top level and read through that
 # 2. Follow the documentation below to learn how to create a package for the package type you are creating.
 # 3. In Chocolatey scripts, ALWAYS use absolute paths - $toolsDir gets you to the package's tools directory.
-$ErrorActionPreference = 'Stop'; # stop on all errors
+#$ErrorActionPreference = 'Stop'; # stop on all errors
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
@@ -36,9 +36,11 @@ if (!(Test-Path -Path $quarksPath)){
 Write-Host 'Installing FoxDotQuark quark.'
 $foxDotQuarkUrl = 'https://github.com/Qirky/FoxDotQuark.git'
 $foxDotQuarkPath = $quarksPath + '\FoxDotQuark'
+Write-Host 'Installing FoxDotQuark quark on.' + $foxDotQuarkPath
 
 if (!(Test-Path -Path $foxDotQuarkPath)){
-    git clone $foxDotQuarkUrl $foxDotQuarkPath
+    Write-Host 'Cloning FoxDotQuark from .' + $foxDotQuarkUrl
+    git clone --quiet $foxDotQuarkUrl $foxDotQuarkPath
 } else {
     Write-Host 'FoxDotQuark quark already installed.'
 }
@@ -50,7 +52,7 @@ $batLibUrl = 'https://github.com/supercollider-quarks/BatLib.git'
 $batLibPath = $quarksPath + '\BatLib'
 
 if (!(Test-Path -Path $batLibPath)){
-    git clone $batLibUrl $batLibPath
+    git clone --quiet $batLibUrl $batLibPath
 } else {
     Write-Host 'SuperDirt quark already installed.'
 }
