@@ -10,7 +10,7 @@ Make sure you have Chocolatey installed. See https://chocolatey.org for more inf
 1. Run Windows PowerShell with admin privileges, and then execute this command:
 
 ```bash
-choco install foxdot
+choco install foxdot --version 0.0.1
 ```
 
 ## Run FoxDot
